@@ -8,7 +8,4 @@ if option=="Yes":
     a=raw_input(" Enter the element : ")
     list.insert(5,a)
     print list
-    if option == "No":
-        a = raw_input(" Enter the element : ")
-        list.insert(4, a)
-        print list
+
