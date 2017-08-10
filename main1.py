@@ -1,12 +1,13 @@
 # import statements
 from spy_details import spy_name,spy_salutation,spy_age,spy_rating
+from start_chat import start_chat
 
 print "Let's get started "
-question="Do you want to continue as "+spy_salutation+" "+spy_name+" (Y/N) : g"
+question="Do you want to continue as "+spy_salutation+" "+spy_name+" (Y/N) : "
 existing=raw_input(question)
 # check vaidating user input
 if (existing=="Y" or existing=="y") :
-    pass
+    start_chat()
 elif (existing =="N" or existing =="n") :
     spy_name=raw_input("Enter your name : ")
     if len(spy_name)>0 :
